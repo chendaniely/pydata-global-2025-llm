@@ -1,0 +1,16 @@
+project:
+  type: website
+  output-dir: docs
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: /assets/styles.css
+    toc: true
+
+editor:
+  render-on-save: true
+
+brand: _brand.yml

@@ -1,0 +1,12 @@
+logs
+.venv
+scratch
+.env
+
+/.quarto/
+**/*.quarto_ipynb
+.DS_Store
+.DS_Store
+
+index.html
+*_files

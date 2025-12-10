@@ -1,0 +1,33 @@
+# meta:
+#   name: brand.yml
+#   link: https://posit-dev.github.io/brand-yml
+
+#logo: logos/icon/brand-yml-icon-color.svg
+
+color:
+  palette:
+    slate: "#3E4C59"       # Primary base (Slate Gray)
+    ivory: "#F6F5F3"       # Background (Soft Ivory)
+    orange: "#FF6B35"      # Accent (Burnt Orange)
+    taupe: "#C1BDB3"       # Neutral (Warm Taupe)
+    charcoal: "#2D2D2D"    # Text (Charcoal)
+    black: "#1A1A1A"       # Utility black
+    white: "#F9F9F9"       # Utility white
+
+  foreground: charcoal
+  background: ivory
+  primary: orange
+  danger: "#FF3D7F"
+
+typography:
+  fonts:
+    - family: Atkinson Hyperlegible
+      source: google
+    - family: Atkinson Hyperlegible Mono
+      source: google
+
+  base: Atkinson Hyperlegible
+  headings:
+    family: Atkinson Hyperlegible
+    weight: 700
+  monospace: Atkinson Hyperlegible Mono
