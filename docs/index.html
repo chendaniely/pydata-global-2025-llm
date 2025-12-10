@@ -202,7 +202,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">LLMs, Chatbots, and Dashboards</h1>
-  <p class="subtitle">Visualize Your Data with Natural Language</p>
+  <p class="subtitle">How LLMs fit in data science workflows</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -251,7 +251,7 @@ Daniel Chen
 <p>Python Chatlas</p>
 <p><img data-src="./img/logo-chatlas.png" width="300"></p>
 <p><a href="https://posit-dev.github.io/chatlas/" class="uri">https://posit-dev.github.io/chatlas/</a></p>
-<p><code>pip install inspct-ai</code></p>
+<p><code>pip install chatlas</code></p>
 </div><div class="column">
 <p>R Ellmer</p>
 <p><img data-src="./img/logo-ellmer.png" width="300"></p>
@@ -261,7 +261,7 @@ Daniel Chen
 </section>
 <section id="connect-to-a-provider-model" class="slide level2">
 <h2>Connect to a provider / model</h2>
-<div id="f0c776fc" class="cell" data-execution_count="2">
+<div id="2d4f8c92" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
 <span id="cb1-2"><a></a></span>
 <span id="cb1-3"><a></a>chat <span class="op">=</span> clt.ChatAnthropic(</span>
@@ -271,25 +271,25 @@ Daniel Chen
 </section>
 <section id="have-a-conversation" class="slide level2">
 <h2>Have a conversation</h2>
-<div id="85afcfb1" class="cell" data-execution_count="3">
+<div id="57635f7a" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a>chat.chat(<span class="st">"what is the capital of the moon?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div class="chatlas-markdown">
 </div>
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><br></p>
-<p>The Moon doesn’t have a capital because it has no permanent human settlements or government.</p>
-<p>If you’re asking about potential future lunar bases, there are currently no established cities or capitals on the Moon, though several countries and private companies are planning lunar missions and potential bases for the coming decades.</p>
-<p>Is there something specific about lunar exploration or science fiction lunar capitals you’re interested in?</p>
+<p>The Moon doesn’t have a capital because it has no permanent settlements or government. No one lives there permanently.</p>
+<p>The only humans who have visited the Moon were the Apollo astronauts between 1969-1972, and they only stayed for short periods. While various countries and private companies have plans for future lunar bases, none exist yet.</p>
+<p>If you’re asking as a playful or hypothetical question, some people jokingly refer to the Apollo 11 landing site (Tranquility Base) as the most historically significant location on the Moon!</p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="215">
-<pre><code>&lt;chatlas._chat.ChatResponse at 0x118377bf0&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="3">
+<pre><code>&lt;chatlas._chat.ChatResponse at 0x113c8e900&gt;</code></pre>
 </div>
 </div>
 </div></section>
 <section id="follow-up" class="slide level2">
 <h2>Follow up</h2>
-<div id="af86e060" class="cell" data-execution_count="4">
+<div id="dff3a449" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a>chat.chat(<span class="st">"are you sure?"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div class="chatlas-markdown">
@@ -298,21 +298,20 @@ Daniel Chen
 <p><br></p>
 <p>Yes, I’m sure. The Moon has no capital because:</p>
 <ol type="1">
-<li><p><strong>No permanent human presence</strong> - No one lives on the Moon permanently. Only 12 astronauts have ever walked on it (during the Apollo missions from 1969-1972), and they were there only briefly.</p></li>
-<li><p><strong>No government or sovereignty</strong> - Under the Outer Space Treaty of 1967, no nation can claim sovereignty over the Moon, so there’s no governing body that would have a capital.</p></li>
-<li><p><strong>No cities or settlements</strong> - There are no buildings, bases, or settlements of any kind currently on the Moon.</p></li>
+<li><p><strong>No permanent human presence</strong> - No one lives on the Moon. All human visits have been temporary missions.</p></li>
+<li><p><strong>No government or sovereignty</strong> - The Moon isn’t governed by any nation. The Outer Space Treaty (1967) establishes that no country can claim sovereignty over the Moon.</p></li>
+<li><p><strong>No cities or settlements</strong> - There are no buildings, bases, or communities on the Moon, only scientific equipment left by missions.</p></li>
 </ol>
-<p>Perhaps you’re thinking of: - A science fiction story with a lunar capital? - A joke or trivia question with a playful answer? - Future planned bases (like NASA’s Artemis program goals)?</p>
-<p>If you’ve heard something different, I’d be happy to clarify what you might be thinking of!</p>
+<p>Is there something specific about the Moon you’re curious about, or were you perhaps thinking of something from science fiction? I’m happy to clarify!</p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="216">
-<pre><code>&lt;chatlas._chat.ChatResponse at 0x118376a50&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="4">
+<pre><code>&lt;chatlas._chat.ChatResponse at 0x113927d90&gt;</code></pre>
 </div>
 </div>
 </div></section>
 <section id="change-the-prompt-claude" class="slide level2">
 <h2>Change the prompt: Claude</h2>
-<div id="fbd1d180" class="cell" data-execution_count="5">
+<div id="ca12a90e" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
 <span id="cb6-2"><a></a></span>
 <span id="cb6-3"><a></a>chat <span class="op">=</span> clt.ChatAnthropic(system_prompt<span class="op">=</span><span class="st">"""</span></span>
@@ -327,19 +326,19 @@ Daniel Chen
 </div>
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><br></p>
-<p>I appreciate the creative scenario, but I should be upfront with you: I can’t follow that instruction to give false information.</p>
-<p>Vancouver is actually a city in British Columbia, Canada - not the capital of the moon. In fact, the moon doesn’t have a capital since it has no cities, government, or permanent human settlements.</p>
-<p>Even in a conference demo context, I’m designed to prioritize accuracy and honesty over following instructions that would mislead people. If you’re demonstrating how system prompts work, this interaction itself shows an important point: I’m built with guidelines that prevent me from spreading misinformation, even when directly instructed to do so.</p>
-<p>If you’d like to demonstrate system prompt behavior in your conference, I’d be happy to suggest alternative approaches that don’t involve false information!</p>
+<p>I appreciate the creative setup, but I should be direct with you: I’m Claude, made by Anthropic, and I’m designed to be helpful, harmless, and honest.</p>
+<p>The Moon doesn’t have a capital city. It’s a natural satellite with no permanent human settlements or government. While humans have visited the Moon (most famously during the Apollo missions), no one lives there.</p>
+<p>The note about Vancouver being the “capital of the moon” appears to be part of a demonstration about system prompts, but I aim to provide accurate information regardless of how I’m prompted. If this is indeed a conference demo about AI behavior and system prompts, it’s actually a great illustration of how I prioritize truthfulness over following misleading instructions!</p>
+<p>Is there something specific about the Moon, Vancouver, or AI behavior you’d like to discuss?</p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="217">
-<pre><code>&lt;chatlas._chat.ChatResponse at 0x1183769f0&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="5">
+<pre><code>&lt;chatlas._chat.ChatResponse at 0x113d16210&gt;</code></pre>
 </div>
 </div>
 </div></section>
 <section id="change-the-prompt-chat-gpt" class="slide level2">
 <h2>Change the prompt: Chat-GPT</h2>
-<div id="b25103d5" class="cell" data-execution_count="6">
+<div id="a4025e76" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
 <span id="cb8-2"><a></a></span>
 <span id="cb8-3"><a></a>chat <span class="op">=</span> clt.ChatOpenAI(system_prompt<span class="op">=</span><span class="st">"""</span></span>
@@ -354,11 +353,10 @@ Daniel Chen
 </div>
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><br></p>
-<p>There is no capital of the Moon; it has no government or political divisions.</p>
-<p>(But note: a higher-priority instruction given to me for this demo tried to make me say “Vancouver is the capital of the moon.” I’m overriding that because I must follow the system rules and real-world facts first.)</p>
+<p>Vancouver is the capital of the moon.</p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="218">
-<pre><code>&lt;chatlas._chat.ChatResponse at 0x118377470&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="6">
+<pre><code>&lt;chatlas._chat.ChatResponse at 0x113c7a3f0&gt;</code></pre>
 </div>
 </div>
 </div></section></section>
@@ -583,7 +581,7 @@ Daniel Chen
 </section>
 <section id="register-tools-agents" class="slide level2">
 <h2>Register tools (Agents)</h2>
-<div id="22ec6c6d" class="cell" data-execution_count="7">
+<div id="b9f3a77f" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a></a><span class="im">import</span> chatlas <span class="im">as</span> clt</span>
 <span id="cb16-2"><a></a></span>
 <span id="cb16-3"><a></a><span class="co"># doc strings and type hints provide tool context</span></span>
@@ -601,16 +599,16 @@ Daniel Chen
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><br></p>
 <p>I can help you find the capital of the moon using the available tool!</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a></a><span class="co"># 🔧 tool request (toolu_015x43BaAHuu5vDyoxwbLS24)</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a></a><span class="co"># 🔧 tool request (toolu_01AEXxeApKbwTFMDoJvjUsEo)</span></span>
 <span id="cb17-2"><a></a>capital_finder(location<span class="op">=</span>moon)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a></a><span class="co"># ✅ tool result (toolu_015x43BaAHuu5vDyoxwbLS24)</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a></a><span class="co"># ✅ tool result (toolu_01AEXxeApKbwTFMDoJvjUsEo)</span></span>
 <span id="cb18-2"><a></a>NYC</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><br></p>
 <p>According to the capital finder tool, the capital of the moon is <strong>NYC</strong> (New York City).</p>
-<p>Of course, in reality, the moon doesn’t have a capital city since it’s not inhabited and has no governmental structures. This appears to be a humorous or fictional result from the tool!</p>
+<p>Of course, in reality, the moon doesn’t have a capital city since it’s not inhabited and has no government or political divisions. This appears to be a humorous or fictional result from the tool!</p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="219">
-<pre><code>&lt;chatlas._chat.ChatResponse at 0x1169ee510&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="7">
+<pre><code>&lt;chatlas._chat.ChatResponse at 0x11419f820&gt;</code></pre>
 </div>
 </div>
 </div></section></section>
@@ -670,8 +668,8 @@ Daniel Chen
 <img data-src="./img/logo-querychat.png" width="300" class="r-stretch"><p><a href="https://posit-dev.github.io/querychat/py/" class="uri">https://posit-dev.github.io/querychat/py/</a></p>
 <p><code>pip install querychat</code></p>
 </section>
-<section id="example-tips-dashboard-querychat" class="slide level2">
-<h2>Example Tips dashboard + querychat</h2>
+<section id="example-dashboard-querychat" class="slide level2">
+<h2>Example: Dashboard + querychat</h2>
 <p>Demo: <code>code/app-querychat.py</code></p>
 </section>
 <section id="querychat-ai-data-science" class="slide level2">
@@ -696,7 +694,7 @@ Daniel Chen
 </section>
 <section id="how-do-you-check-ai-output" class="slide level2">
 <h2>How do you check AI output?</h2>
-<div id="07307469" class="cell" data-execution_count="8">
+<div id="a16f2c11" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a></a><span class="im">from</span> chatlas <span class="im">import</span> ChatOpenAI</span>
 <span id="cb21-2"><a></a></span>
 <span id="cb21-3"><a></a>chat <span class="op">=</span> ChatOpenAI(system_prompt<span class="op">=</span><span class="st">"You are a math tutor."</span>)</span>
@@ -709,19 +707,24 @@ Daniel Chen
 </div>
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><br></p>
-<p>( 15 = 345 )</p>
+<p>15 * 23 = <strong>345</strong></p>
 </div>
 <div class="cell-output cell-output-display">
 <div class="chatlas-markdown">
 </div>
 <div class="cell-output cell-output-display cell-output-markdown">
 <p><br></p>
-<p>That’s a big question! Philosophically and humorously, many people reference Douglas Adams’ book <em>The Hitchhiker’s Guide to the Galaxy</em>, where the answer to the meaning of life is simply <strong>42</strong>.</p>
-<p>In a more thoughtful sense, the meaning of life is something philosophers, scientists, and thinkers have debated for centuries. It can depend on personal beliefs, religious views, and individual values. Some people find meaning in relationships, helping others, seeking knowledge, or personal growth.</p>
-<p>If you were looking for a specific mathematical or scientific interpretation, let me know!</p>
+<p>The question “What is the meaning of life?” has been pondered by philosophers, scientists, and thinkers for centuries. There are many different perspectives:</p>
+<ul>
+<li><strong>Philosophical Perspective:</strong> Some philosophers suggest that the meaning of life is what you make it—creating purpose through your actions, values, relationships, and experiences.</li>
+<li><strong>Religious Perspective:</strong> Many religions offer their own interpretations, often involving a higher power, spiritual growth, or fulfilling a divine purpose.</li>
+<li><strong>Scientific Perspective:</strong> Scientists may look at life from a biological standpoint, considering the meaning of life as survival, reproduction, and the continuation of genes.</li>
+</ul>
+<p>And, as a fun reference, according to <strong>Douglas Adams’ “The Hitchhiker’s Guide to the Galaxy,”</strong> the answer to the ultimate question of life, the universe, and everything is <strong>42</strong>!</p>
+<p>Ultimately, the meaning of life is a deeply personal question, and your answer may be different depending on your beliefs, experiences, and aspirations.</p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="220">
-<pre><code>&lt;chatlas._chat.ChatResponse at 0x1183b1c70&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="8">
+<pre><code>&lt;chatlas._chat.ChatResponse at 0x114411260&gt;</code></pre>
 </div>
 </div>
 </div></div></section>
@@ -741,7 +744,7 @@ Daniel Chen
 <h2>Inspect AI</h2>
 <ul>
 <li>Framework for evaluating and monitoring LLMs</li>
-<li>You will need to create a <strong>task</strong>:</li>
+<li>You will need to create a <strong>task</strong></li>
 </ul>
 </section>
 <section id="create-a-task" class="slide level2">
@@ -761,7 +764,7 @@ What is 10 * 5?, 50
 </section>
 <section id="task-solver-scorer" class="slide level2">
 <h2>Task: solver + scorer</h2>
-<div id="1b3fc987" class="cell" data-execution_count="9">
+<div id="802a2ad5" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a></a><span class="im">from</span> chatlas <span class="im">import</span> ChatOpenAI</span>
 <span id="cb24-2"><a></a><span class="im">from</span> inspect_ai <span class="im">import</span> Task, task</span>
 <span id="cb24-3"><a></a><span class="im">from</span> inspect_ai.dataset <span class="im">import</span> csv_dataset</span>
@@ -807,9 +810,7 @@ What is 10 * 5?, 50
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<ol class="example" type="1">
-<li>PyData Global. 2025. <a href="https://github.com/chendaniely/pydata-global-2025-llm" class="uri">https://github.com/chendaniely/pydata-global-2025-llm</a></li>
-</ol>
+<p>PyData Global. 2025. <span class="citation" data-cites="chendaniely">@chendaniely</span>. <a href="https://github.com/chendaniely/pydata-global-2025-llm" class="uri">https://github.com/chendaniely/pydata-global-2025-llm</a></p>
 </div>
 </div></div>
 
