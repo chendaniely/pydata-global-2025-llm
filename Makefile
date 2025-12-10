@@ -10,3 +10,4 @@ preview:
 render:
 	rm -rf docs
 	quarto render index.qmd
+	touch docs/.nojekyll
