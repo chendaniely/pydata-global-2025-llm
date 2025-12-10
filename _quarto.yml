@@ -7,7 +7,6 @@ format:
     theme:
       - cosmo
       - brand
-    css: /assets/styles.css
     toc: true
 
 editor:

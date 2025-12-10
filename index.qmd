@@ -8,7 +8,7 @@ format:
     smaller: true
     slide-number: true
     footer: >
-      @chendaniely. PyData Global. 2025.
+      PyData Global. 2025. @chendaniely.
       <https://github.com/chendaniely/pydata-global-2025-llm>
 
 editor:
@@ -64,7 +64,7 @@ Python Chatlas
 
 <https://posit-dev.github.io/chatlas/>
 
-`pip install inspct-ai`
+`pip install chatlas`
 
 :::
 ::: {.column}

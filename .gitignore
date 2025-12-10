@@ -9,3 +9,4 @@ scratch
 .DS_Store
 
 *_files
+__pycache__/
